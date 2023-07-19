@@ -18,17 +18,27 @@
     </noscript>
     <header>
       <h1>Michael Barlow</h1>
-      <nav>
-        <a href="/">About</a>
-        <a href="/projects" class="selected">Projects</a>
-        <a href="/publications">Publications</a>
-      </nav>
+      <script src="/js/generateNavigation.js"></script>
       <hr />
     </header>
     <main>
-      <p>A selection of open-source browser-based projects that I have worked on. All of my open-source projects are available on my <a href="https://github.com/Michael-JB">GitHub profile</a>.</p>
+      <p>
+        A selection of browser-based open-source projects that I have worked on.
+        To see all of my open-source projects, visit my
+        <a href="https://github.com/Michael-JB">GitHub page</a>.
+      </p>
       <ul class="projects-list">
         <h2>Miscellaneous</h2>
+        <li>
+          <ul class="project">
+            <li><strong class="project-title">Sloth Search</strong></li>
+            <li>A browser extension that provides AI-powered semantic search over web pages.</li>
+          </ul>
+          <ul class="project-links">
+            <li><a href="https://chrome.google.com/webstore/detail/sloth-search/jinbbhdfmkgebhbekpoaignaeclflibd">chrome web store listing</a></li>
+            <li><a href="https://github.com/Michael-JB/sloth-search">code</a></li>
+          </ul>
+        </li>
         <li>
           <ul class="project">
             <li><strong class="project-title">Fibonacci Clock</strong></li>
@@ -105,11 +115,10 @@
     <footer>
       <script src="/js/generateFooterCopyright.js"></script>
       <nav id="social-icons" aria-label="Social">
-        <a href="https://github.com/Michael-JB"><img src="/icons/github.svg"></a>
-        <a href="https://www.thingiverse.com/michael__b"><img src="/icons/thingiverse.svg"></a>
-        <a href="https://instagram.com/"><img src="/icons/instagram.svg"></a>
-        <a href="https://facebook.com/"><img src="/icons/facebook.svg"></a>
-        <a href="" id="email-anchor"><img src="/icons/email.svg"></a>
+        <a href="https://github.com/Michael-JB"><img src="/icons/github.svg"/></a>
+        <a href="https://www.thingiverse.com/michael__b"><img src="/icons/thingiverse.svg"/></a>
+        <a href="https://www.linkedin.com/in/michael-barlow-0252b224a/"><img src="/icons/linkedin.svg"/></a>
+        <a href="" id="email-anchor"><img src="/icons/email.svg" /></a>
         <script src="/js/generateFooterEmail.js"></script>
       </nav>
     </footer>
