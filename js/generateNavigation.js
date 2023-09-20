@@ -2,6 +2,7 @@ const PATHS = [
   { name: "About", url: "/" },
   { name: "Projects", url: "/projects" },
   { name: "Publications", url: "/publications" },
+  { name: "Pottery", url: "/pottery" },
 ];
 
 const getCurrentPath = () =>
