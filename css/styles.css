@@ -65,7 +65,7 @@ footer nav {
   text-align: right;
 }
 
-footer nav a img {
+img.icon {
   width: 1rem;
   height: 1rem;
 }
@@ -90,6 +90,12 @@ footer nav a img:hover {
   max-width: 200px;
   border-radius: 5%;
   margin-top: 1rem;
+}
+
+#location {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
 }
 
 ul {

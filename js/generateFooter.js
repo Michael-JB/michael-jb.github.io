@@ -2,15 +2,15 @@ document.write(`<footer>
   <small>&copy; ${new Date().getFullYear()} Michael Barlow</small>
   <nav id="social-icons" aria-label="Social">
     <a href="https://github.com/Michael-JB"
-      ><img src="/icons/github.svg"
+      ><img class="icon" src="/icons/github.svg"
     /></a>
     <a href="https://www.thingiverse.com/michael__b"
-      ><img src="/icons/thingiverse.svg"
+      ><img class="icon" src="/icons/thingiverse.svg"
     /></a>
     <a href="https://www.linkedin.com/in/michael-barlow-0252b224a/"
-      ><img src="/icons/linkedin.svg"
+      ><img class="icon" src="/icons/linkedin.svg"
     /></a>
-    <a href="" id="email-anchor"><img src="/icons/email.svg" /></a>
+    <a href="" id="email-anchor"><img class="icon" src="/icons/email.svg" /></a>
   </nav>
 </footer>`);
 
