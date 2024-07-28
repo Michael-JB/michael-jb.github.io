@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Michael Barlow">
+    <meta name="description" content="Personal website">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <link href="/css/styles.css" rel="stylesheet">
+    <title>Michael Barlow | Pottery</title>
+  </head>
+  <body>
+    <noscript>
+      <header>
+        <span>Please enable JavaScript to view this site in full.</span>
+      </header>
+    </noscript>
+    <header>
+      <h1>Michael Barlow</h1>
+      <script src="/js/generateNavigation.js"></script>
+      <hr />
+    </header>
+    <main>
+      <p>
+        A selection of pottery-related 3D projects that I open-source here under the
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 license</a>
+        in case they are useful to others.
+      </p>
+      <ul class="simple">
+        <li>
+          <h2>Turning spinner</h2>
+          <p>
+            This modular tool makes it easy to pin pots down to the wheel for trimming.
+          </p>
+          <div class="columns">
+            <a href="./pictures/turning-spinner.jpeg"><img src="./pictures/turning-spinner.jpeg" /></a>
+            <a href="./pictures/turning-spinner-cross-section.png"><img src="./pictures/turning-spinner-cross-section.png" /></a>
+          </div>
+          <p>
+            An internal bearing allows the top and bottom to spin independently.
+            The top is finished with a knurled pattern for better grip while the bottom attachments
+            are flat to avoid marking the clay. The top assembly is held together with a machine
+            screw and captive nut and the bottom attaches with a friction fit to allow for easy
+            changing. I designed two attachment sizes to accommodate different pots; the smaller of
+            the two sizes is pictured. I recommend printing both and alternating as needed.
+          </p>
+          <h3 class="mv-1">Bill of materials</h3>
+          <ul class="mb-2">
+            <li><p class="m0">1x 12mm M3 machine screw</p></li>
+            <li><p class="m0">1x square M3 nut</p></li>
+            <li><p class="m0">1x 6202ZZ ball bearing</p></li>
+          </ul>
+          <h3 class="mv-1">Printing and assembly</h3>
+          <p>
+            When slicing <em>turning-spinner-top.stl</em>, add a pause step just before the captive
+            nut hole is closed off. When printing, insert the nut at this pause step. The captive
+            nut hole has a thin cover to ensure the opening above it prints correctly. The machine
+            screw should break through this cover when tightened. Print this part with the knurled
+            pattern facing up and add supports for the bearing recess. You can print all other parts
+            without supports.
+          </p>
+          <h3 class="mv-1">Files</h3>
+          <ul>
+            <li><a href="./files/turning-spinner-top.stl">turning-spinner-top.stl</a></li>
+            <li><a href="./files/turning-spinner-top-clamp.stl">turning-spinner-top-clamp.stl</a></li>
+            <li><a href="./files/turning-spinner-attachment.stl">turning-spinner-attachment.stl</a></li>
+            <li><a href="./files/turning-spinner-attachment-wide.stl">turning-spinner-attachment-wide.stl</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Tile batt system</h2>
+          <p>
+            Making delicate forms on the wheel is hard: wiring them off and removing them can
+            distort the shape. This modular tool allows you to mount a bisque-fired tile (or
+            standard MDF batt) to the wheel head and throw directly onto it.
+            When you're done, you can easily remove the batt and replace it with another.
+          </p>
+          <div class="columns">
+            <a href="./pictures/batt-system.jpeg"><img src="./pictures/batt-system.jpeg" /></a>
+            <a href="./pictures/bisque-batts.jpeg"><img src="./pictures/bisque-batts.jpeg" /></a>
+          </div>
+          <p>
+            Commercial batts are often made from MDF. This has the desirable property of being
+            absorbent to allow the clay to stick, but it is prone to warping. I opted to experiment
+            with bisque-fired tiles: they're cheap, equally absorbent and don't warp. After using
+            them extensively, I can confirm they work well. This batt system accomodates two batt
+            sizes via a nesting adapter: 100x100mm and 150x150mm. Orthogonal clamps hold the batt
+            in place and allow for slight variance in batt size. The design also includes two
+            shims, one for each batt size, to ensure thinner (6.5mm) batts sit level. You can use
+            thicker (9mm) batts without the shims. The system attaches to the wheel via the
+            standard 10in mounting holes, with a slot to allow for some variance in hole placement.
+          </p>
+          <a href="./pictures/batt-system-schematic.png"><img src="./pictures/batt-system-schematic.png" /></a>
+          <p>
+            The main body of the batt system comprises four dove-tailed pieces that slot together.
+            This is to allow printing on an 18x18cm print surface. In my next iteration of this
+            design, I would make these pieces bolt together: clay can get stuck in the dovetails and
+            make the system hard to clean.
+          </p>
+          <h3 class="mv-1">Bill of materials</h3>
+          <ul class="mb-2">
+            <li><p class="m0">2x 25-32mm M3 machine screw</p></li>
+            <li><p class="m0">2x square M3 nut</p></li>
+            <li><p class="m0">2x 12-16mm M6 hex bolt</p></li>
+            <li><p class="m0">2x M6 wing nuts</p></li>
+            <li><p class="m0">100x100x[6.5,9]mm batt(s)</p></li>
+            <li><p class="m0">150x150x[6.5,9]mm batt(s)</p></li>
+          </ul>
+          <h3 class="mv-1">Printing and assembly</h3>
+          <p>
+            When slicing <em>batt-system-body-2.stl</em> and <em>batt-system-body-3.stl</em>, add a
+            pause step just before the captive nut hole is closed off. When printing, insert the
+            nut at this pause step. Print all body parts upside-down with supports as appropriate
+            for a clean surface finish. Print two copies of <em>batt-system-clamp.stl</em> and
+            <em>batt-system-clamp-inner.stl</em>. You only need to print the shims if using 6.5mm
+            batts, and you only need to print the inner parts if using 100x100mm batts.
+          </p>
+          <h3 class="mv-1">Files</h3>
+          <ul>
+            <li><a href="./files/batt-system-body-1.stl">batt-system-body-1.stl</a></li>
+            <li><a href="./files/batt-system-body-2.stl">batt-system-body-2.stl</a></li>
+            <li><a href="./files/batt-system-body-3.stl">batt-system-body-3.stl</a></li>
+            <li><a href="./files/batt-system-body-4.stl">batt-system-body-4.stl</a></li>
+            <li><a href="./files/batt-system-body-inner.stl">batt-system-body-inner.stl</a></li>
+            <li><a href="./files/batt-system-clamp.stl">batt-system-clamp.stl</a></li>
+            <li><a href="./files/batt-system-clamp-inner.stl">batt-system-clamp-inner.stl</a></li>
+            <li><a href="./files/batt-system-shim-large.stl">batt-system-shim-large.stl</a></li>
+            <li><a href="./files/batt-system-shim-small.stl">batt-system-shim-small.stl</a></li>
+          </ul>
+        </li>
+        <li>
+          <h2>Calipers</h2>
+          <p>These simple calipers are useful for measuring diameters while throwing.</p>
+          <div class="columns">
+            <a href="./pictures/calipers-1.png"><img src="./pictures/calipers-1.png" /></a>
+            <a href="./pictures/calipers-2.png"><img src="./pictures/calipers-2.png" /></a>
+          </div>
+          <p>
+            The calipers can measure both internal and external diameters. A wing nut and recessed
+            hex bolt allow you to adjust and lock the arms as needed.
+          </p>
+          <h3 class="mv-1">Bill of materials</h3>
+          <ul class="mb-2">
+            <li><p class="m0">12mm M6 hex bolt</p></li>
+            <li><p class="m0">M6 wing nut</p></li>
+          </ul>
+          <h3 class="mv-1">Files</h3>
+          <ul>
+            <li><a href="./files/calipers-top.stl">calipers-top.stl</a></li>
+            <li><a href="./files/calipers-bottom.stl">calipers-bottom.stl</a></li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <script src="/js/generateFooter.js"></script>
+  </body>
+</html>

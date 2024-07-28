@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("../fonts/open-sans.woff2") format("woff2");
+}
+
 html {
   font-family: "Open Sans", sans-serif;
 }
@@ -46,6 +55,7 @@ header nav .selected {
 }
 
 main {
+  margin-top: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -65,66 +75,82 @@ footer nav {
   text-align: right;
 }
 
+footer nav a img:hover {
+  border-bottom: 1px solid black;
+}
+
+em.underline {
+  text-decoration: underline;
+  font-style: normal;
+}
+
 img.icon {
   width: 1rem;
   height: 1rem;
 }
 
-footer nav a img:hover {
-  border-bottom: 1px solid black;
-}
-
-#about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 150%;
-}
-
-#about-me p {
-  margin-bottom: 0;
-}
-
-#image-of-me {
-  width: 90%;
+img.profile {
   max-width: 200px;
   border-radius: 5%;
-  margin-top: 1rem;
 }
 
-#location {
-  display: flex;
-  align-items: center;
-  column-gap: 0.4rem;
+img {
+  max-width: 100%;
 }
 
 ul {
   font-size: small;
   text-align: left;
+  list-style: square;
+}
+
+ul.simple {
   padding: 0;
   list-style: none;
 }
 
-.publication .me {
-  text-decoration: underline;
-  font-style: normal;
+p.stretch {
+  line-height: 1.5;
 }
 
-.publication-links li {
-  display: inline-block;
-  margin-right: 0.5rem;
+h3 {
+  font-size: small;
 }
 
-.project-links li {
-  display: inline-block;
-  margin-right: 0.5rem;
+.columns {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.projects-list > li {
-  margin-bottom: 1rem;
+.rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.pottery img {
-  max-width: 100%;
+.m0 {
+  margin: 0;
+}
+
+.mt-1 {
   margin-top: 0.5rem;
+}
+
+.mv-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 1rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
 }
